@@ -2,6 +2,15 @@
 
 - type: github
   icon: "fab fa-github"
+  url: 'https://github.com/phatndt'
+
+- type: linkedin
+  icon: "fa fa-linkedin"
+  url: 'https://www.linkedin.com/in/phatndt'
+
+- type: facebook
+  icon: "fa fa-facebook"
+  url: 'https://www.facebook.com/phatndt'
 
 - type: email
   icon: "fas fa-envelope"
