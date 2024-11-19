@@ -1,6 +1,6 @@
 ---
 title: Clean architecture
-date: 2024-11/19 20:30:00 +/-TTTT
+date: 2024-11-19 20:30:00
 categories: [TOP_CATEGORIE, SUB_CATEGORIE]
 tags: [architecture]     # TAG names should always be lowercase
 ---
