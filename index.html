@@ -1,9 +1,5 @@
 ---
-layout: default
-refactor: true
 ---
-
-{% include lang.html %}
 
 <!DOCTYPE html>
 <html>
@@ -13,14 +9,6 @@ refactor: true
   </head>
   <body>
     <h1>Hello World!</h1>
-
-    <div>
-        {% for post in posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </div>
-
+    <h1>{{ "Hello World!" | downcase }}</h1>
   </body>
 </html>
