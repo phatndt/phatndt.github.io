@@ -1,11 +1,8 @@
 ---
-title: Clean architecture
+title: Clean architecture basic
 date: 2024-11-19 20:30:00
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
 tags: [architecture]     # TAG names should always be lowercase
 ---
-
-# Clean Architecture Basic
 
 ![img-description](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
