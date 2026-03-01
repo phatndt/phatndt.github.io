@@ -1,0 +1,16 @@
+about:
+  intro: "Hi there, I'm Phat, an Associate Android Engineer based in Ho Chi Minh City."
+  welcome: >-
+    Welcome to my blog! This site is a static web page built with Jekyll and hosted on GitHub.
+    Here, I share my knowledge and insights gained through studying and working.
+    Feel free to reach out anytime!
+
+  education_heading: "🎓 Education"
+  education:
+    - "2019/09 - 2023/06: Bachelor of Software Engineering, University of Information Technology, HCM City, Vietnam."
+    - "Toeic LC-RC: 735, SP-WR: 250."
+
+  contact_heading: "📧 Contact information"
+
+  resume_heading: "📁 Resume"
+  resume_status: "Updating"

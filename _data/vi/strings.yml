@@ -1,0 +1,16 @@
+about:
+  intro: "Xin chào, tôi là Phát, một Kỹ sư Android đang làm việc tại Thành phố Hồ Chí Minh."
+  welcome: >-
+    Chào mừng đến với blog của tôi! Đây là trang web tĩnh được xây dựng bằng Jekyll và lưu trữ trên GitHub.
+    Tại đây, tôi chia sẻ những kiến thức và hiểu biết tích lũy qua quá trình học tập và làm việc.
+    Hãy liên hệ với tôi bất cứ lúc nào nhé!
+
+  education_heading: "🎓 Học vấn"
+  education:
+    - "2019/09 - 2023/06: Cử nhân Kỹ thuật Phần mềm, Đại học Công nghệ Thông tin, TP.HCM, Việt Nam."
+    - "Toeic LC-RC: 735, SP-WR: 250."
+
+  contact_heading: "📧 Thông tin liên hệ"
+
+  resume_heading: "📁 CV / Hồ sơ"
+  resume_status: "Đang cập nhật"

@@ -3,9 +3,20 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+# -------Polyglot i18n plugin--------
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "vi"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "assets", "sitemap", "CNAME"]
+parallel_localization: false
+# -----------------------------------
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
+# Note: Polyglot manages the active language via `site.active_lang`; `lang` here is the default fallback.
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
