@@ -1,9 +1,15 @@
 ---
-title: Android Activity & Fragment Lifecycle
-date: 2026-02-25 00:00:00
-categories: [Android]
-tags: [lifecycle, activity, fragment]
+title: Multi language
+date: 2026-03-01 00:00:00
+categories: []
+tags: []
 ---
+
 {% assign s = site.data[site.active_lang].strings %}
 
-  {{ s.about.title }}
+{{ s.about.title }}
+
+
+{% assign s1 = site.data[site.active_lang].strings.about %}
+
+{{ s1.intro }}
