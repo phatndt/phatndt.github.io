@@ -282,6 +282,13 @@ Key takeaways:
 
 ---
 
+## 12. Reference
+
+List out all researched documents and articles that help you creat this blog
+- document 1
+- document 2
+- ...
+
 # Interview Signal
 
 Highlight topics that interviewers frequently test:
