@@ -1,7 +1,7 @@
 ---
 title: "Units 3-4: Present Continuous vs Present Simple — English Grammar in Use"
 description: "Understand the subtle differences and overlap between the Present Continuous and Present Simple tenses, focusing on state verbs and changing situations."
-date: 2026-03-27 00:00:00
+date: 2026-03-26 00:00:00
 categories: [English, Grammar]
 tags: [grammar, english-grammar-in-use, units-3-4, present-continuous, present-simple, tense-comparison]
 ---

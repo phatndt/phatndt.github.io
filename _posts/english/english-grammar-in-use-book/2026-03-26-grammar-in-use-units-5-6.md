@@ -1,7 +1,7 @@
 ---
 title: "Units 5-6: Past Simple and Past Continuous — English Grammar in Use"
 description: "Master the past tenses by learning when to use the Past Simple for completed actions and the Past Continuous for ongoing past situations."
-date: 2026-03-27 00:00:00
+date: 2026-03-26 00:00:00
 categories: [English, Grammar]
 tags: [grammar, english-grammar-in-use, units-5-6, past-simple, past-continuous, past-tense]
 ---

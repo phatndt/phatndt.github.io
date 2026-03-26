@@ -1,7 +1,7 @@
 ---
 title: "Units 1-2: Present Continuous and Present Simple — English Grammar in Use"
 description: "Learn when to use the Present Continuous and Present Simple tenses, their forms, and how they express current actions versus general routines."
-date: 2026-03-27 00:00:00
+date: 2026-03-26 00:00:00
 categories: [English, Grammar]
 tags: [grammar, english-grammar-in-use, units-1-2, present-continuous, present-simple, tense]
 ---

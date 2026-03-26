@@ -1,7 +1,7 @@
 ---
 title: "Units 7-8: Present Perfect (Parts 1 & 2) — English Grammar in Use"
 description: "Learn how the Present Perfect bridges the past and the present, focusing on news, life experiences, and keywords like just, already, and yet."
-date: 2026-03-27 00:00:00
+date: 2026-03-26 00:00:00
 categories: [English, Grammar]
 tags: [grammar, english-grammar-in-use, units-7-8, present-perfect, present-perfect-1, present-perfect-2]
 ---
