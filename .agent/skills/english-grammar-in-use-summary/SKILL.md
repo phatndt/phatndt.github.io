@@ -19,13 +19,13 @@ triggers:
 This skill generates **structured grammar unit summaries** based on the book  
 **_English Grammar in Use_ by Raymond Murphy**.
 
-To keep the number of posts manageable (there are 145 units in total), this skill **combines three consecutive units** into a single summary post.
+To keep the number of posts manageable (there are 145 units in total) and to group information logically, this skill **combines related units** (typically two to four units) into a single summary post.
 
 Each summary is saved as a **Jekyll Chirpy blog post** in `_posts/english/english-grammar-in-use-book/`.
 
 The generated post must:
 
-* accurately reflect the grammar rules taught in the three units
+* accurately reflect the grammar rules taught in the combined units
 * use clear, beginner-friendly language
 * include form tables, example sentences, and common mistakes for each unit
 * be useful for both study and future review
@@ -74,7 +74,7 @@ Units 5-7: Present Simple and Continuous — English Grammar in Use
 
 **Description**
 
-Summarize what grammar points are taught across the three units and what the reader will learn.
+Summarize what grammar points are taught across the combined units and what the reader will learn.
 
 Example:
 
@@ -116,7 +116,7 @@ In 2–4 sentences:
 
 * state the grammar topics of the combined units
 * explain why they matter for English learners
-* explicitly list the three units being covered
+* explicitly list the specific units being covered
 
 Keep it brief and motivating.
 
@@ -124,7 +124,7 @@ Keep it brief and motivating.
 
 ## 2. Unit {N}: {First Unit Topic}
 
-*(For each of the three units, include the following subsections using `###`)*
+*(For each of the related units, include the following subsections using `###`)*
 
 ### Grammar Rule
 
@@ -174,21 +174,15 @@ Include when the unit contrasts two similar grammar points.
 
 ---
 
-## 3. Unit {N+1}: {Second Unit Topic}
+## 3. Unit {M}: {Next Unit Topic}
 
-*(Repeat the subsections: Grammar Rule, Form Table, Key Examples, When to Use, Common Mistakes, Comparison)*
-
----
-
-## 4. Unit {N+2}: {Third Unit Topic}
-
-*(Repeat the subsections: Grammar Rule, Form Table, Key Examples, When to Use, Common Mistakes, Comparison)*
+*(Repeat the subsections: Grammar Rule, Form Table, Key Examples, When to Use, Common Mistakes, Comparison; continue for all related units being summarized in the post)*
 
 ---
 
 ## 5. Quick Summary
 
-End the post with a concise bullet-point recap for all three units.
+End the post with a concise bullet-point recap for all units covered in the post.
 
 Format:
 
@@ -199,13 +193,11 @@ Format:
 - Use [grammar point] to [main use case].
 - Don't forget: [one key reminder].
 
-**Unit {N+1}:**
+**Unit {M}:**
 - Use [grammar point] to [main use case].
 - Don't forget: [one key reminder].
 
-**Unit {N+2}:**
-- Use [grammar point] to [main use case].
-- Don't forget: [one key reminder].
+*(Repeat for all units)*
 ```
 
 ---
@@ -248,12 +240,12 @@ Rules:
 
 When generating a unit summary:
 
-1. Identify the three consecutive unit numbers and their grammar topics
-2. Research the grammar rules thoroughly for all three (if not already known)
+1. Identify the related units to be combined and their grammar topics
+2. Research the grammar rules thoroughly for all combined units (if not already known)
 3. Plan the form tables and example sentences for each unit
-4. Write the post following the structure above, covering all three units
+4. Write the post following the structure above, covering all chosen units
 5. Validate:
-   * correct front matter format, combining the three units
+   * correct front matter format, combined units reflected accurately
    * form tables are accurate and present for each unit
    * examples are grammatically correct
    * correct directory: `_posts/english/`
