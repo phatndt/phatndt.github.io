@@ -1,6 +1,6 @@
 ---
 name: english-grammar-in-use-summary
-description: Generates structured English Grammar in Use unit summary blog posts for a Jekyll Chirpy blog, including grammar rules, form tables, examples, and common mistakes.
+description: Generates structured English Grammar in Use topic summary blog posts for a Jekyll Chirpy blog, grouping all relevant units under a single grammar topic, with form tables, examples, and common mistakes.
 metadata:
   labels: [english, grammar, english-grammar-in-use, study-notes]
 triggers:
@@ -10,41 +10,43 @@ triggers:
     - "grammar unit"
     - "summarize unit"
     - "grammar summary"
+    - "grammar topic"
 ---
 
-# English Grammar in Use — Unit Summary Generator
+# English Grammar in Use — Topic Summary Generator
 
 ## Overview
 
-This skill generates **structured grammar unit summaries** based on the book  
+This skill generates **structured grammar topic summaries** based on the book  
 **_English Grammar in Use_ by Raymond Murphy**.
 
-To keep the number of posts manageable (there are 145 units in total) and to group information logically, this skill **combines related units** (typically two to four units) into a single summary post.
+Instead of grouping units by sequential number, this skill **groups units by grammar topic** — a single post covers all units that belong to the same topic (e.g., all Present Tense units, all Modal Verb units, etc.). This makes content easier to search and review by theme.
 
 Each summary is saved as a **Jekyll Chirpy blog post** in `_posts/english/english-grammar-in-use-book/`.
 
 The generated post must:
 
-* accurately reflect the grammar rules taught in the combined units
+* cover all units that belong to the chosen grammar topic
+* accurately reflect the grammar rules taught in those units
 * use clear, beginner-friendly language
 * include form tables, example sentences, and common mistakes for each unit
 * be useful for both study and future review
 * follow the Jekyll Chirpy blog format
 
-**Target length:** 1500–2500 words.
+**Target length:** 2000–4000 words (varies by number of units in the topic).
 
 ---
 
 # Site Context
 
-| Property            | Value                 |
-| ------------------- | --------------------- |
-| Jekyll theme        | `jekyll-theme-chirpy` |
-| Post directory      | `_posts/english/english-grammar-in-use-book/`     |
-| Default language    | English               |
-| Table of contents   | Enabled globally      |
-| Mermaid diagrams    | Supported             |
-| Syntax highlighting | Rouge                 |
+| Property            | Value                                         |
+| ------------------- | --------------------------------------------- |
+| Jekyll theme        | `jekyll-theme-chirpy`                         |
+| Post directory      | `_posts/english/english-grammar-in-use-book/` |
+| Default language    | English                                       |
+| Table of contents   | Enabled globally                              |
+| Mermaid diagrams    | Supported                                     |
+| Syntax highlighting | Rouge                                         |
 
 ---
 
@@ -54,11 +56,11 @@ Every generated post MUST begin with:
 
 ```yaml
 ---
-title: "Units {Start_Unit}-{End_Unit}: {Combined Unit Topics} — English Grammar in Use"
-description: "{2–3 sentence summary of the grammar points covered in these units.}"
+title: "{Grammar Topic}: Units {Unit_List} — English Grammar in Use"
+description: "{2–3 sentence summary of what grammar points are covered in this topic.}"
 date: YYYY-MM-DD 00:00:00
 categories: [English, Grammar]
-tags: [grammar, english-grammar-in-use, units-{Start_Unit}-{End_Unit}, {grammar-topic-tags}]
+tags: [grammar, english-grammar-in-use, {grammar-topic-tags}, {unit-tags}]
 ---
 ```
 
@@ -69,35 +71,44 @@ tags: [grammar, english-grammar-in-use, units-{Start_Unit}-{End_Unit}, {grammar-
 Follow this pattern exactly:
 
 ```
-Units 5-7: Present Simple and Continuous — English Grammar in Use
+Present Tenses: Units 1-7 — English Grammar in Use
+```
+
+Or for non-sequential units:
+
+```
+Modal Verbs: Units 25, 27, 29-31 — English Grammar in Use
 ```
 
 **Description**
 
-Summarize what grammar points are taught across the combined units and what the reader will learn.
+Summarize what grammar points are taught across all the units in this topic and what the reader will learn.
 
 Example:
 
 ```
-Learn when to use the Present Simple and Present Continuous tenses, their forms, and how they differ from each other.
+Explore all Present Tense forms in English — Present Simple, Present Continuous, and Present Perfect — covering their structures, key uses, and how they differ from each other.
 ```
 
 **Tags**
 
 * lowercase
 * hyphen-separated
-* always include `grammar`, `english-grammar-in-use`, and `units-{Start_Unit}-{End_Unit}`
-* add relevant grammar-topic-specific tags
+* always include `grammar` and `english-grammar-in-use`
+* add the topic slug (e.g., `present-tenses`, `modal-verbs`)
+* add individual unit tags: `unit-1`, `unit-2`, etc.
 
 Example:
 
 ```
 grammar
 english-grammar-in-use
-units-5-7
+present-tenses
 present-simple
 present-continuous
-tense
+unit-1
+unit-2
+unit-3
 ```
 
 Do NOT include `layout: post`.
@@ -112,19 +123,40 @@ Follow this exact section order.
 
 ## 1. Introduction
 
-In 2–4 sentences:
+In 3–5 sentences:
 
-* state the grammar topics of the combined units
-* explain why they matter for English learners
-* explicitly list the specific units being covered
+* state the grammar topic of the post
+* list all units included in this topic post
+* explain why this topic matters for English learners
+* give a brief overview of how the units relate to each other
 
 Keep it brief and motivating.
 
 ---
 
-## 2. Unit {N}: {First Unit Topic}
+## 2. Topic Overview (optional Mermaid diagram)
 
-*(For each of the related units, include the following subsections using `###`)*
+When the topic has multiple sub-concepts that relate to each other (e.g., different tense forms, different modal uses), include a **Mermaid diagram** to show the relationships.
+
+Example for Present Tenses:
+
+```mermaid
+graph TD
+    A[Present Tenses] --> B[Present Simple]
+    A --> C[Present Continuous]
+    A --> D[Present Perfect]
+    B --> E[Unit 1 & 2]
+    C --> F[Unit 3 & 4]
+    D --> G[Unit 7 & 8]
+```
+
+Skip this section if the topic is simple and a diagram adds no value.
+
+---
+
+## 3. Unit {N}: {Unit Topic}
+
+*(Repeat this section for every unit in the topic, using `##` for each unit heading and `###` for subsections)*
 
 ### Grammar Rule
 
@@ -142,10 +174,10 @@ Always include a **form table** showing the grammatical structure.
 
 Example for Present Simple:
 
-| Subject         | Positive          | Negative              | Question            |
-| --------------- | ----------------- | --------------------- | ------------------- |
-| I / You / We / They | work          | don't work            | Do you work?        |
-| He / She / It   | works             | doesn't work          | Does she work?      |
+| Subject             | Positive | Negative     | Question      |
+| ------------------- | -------- | ------------ | ------------- |
+| I / You / We / They | work     | don't work   | Do you work?  |
+| He / She / It       | works    | doesn't work | Does she work?|
 
 ### Key Examples
 
@@ -170,34 +202,50 @@ Format:
 
 ### Comparison (if applicable)
 
-Include when the unit contrasts two similar grammar points.
+Include when the unit contrasts two similar grammar points (e.g., Present Simple vs. Present Continuous).
 
 ---
 
-## 3. Unit {M}: {Next Unit Topic}
+## 4. Unit {M}: {Next Unit Topic}
 
-*(Repeat the subsections: Grammar Rule, Form Table, Key Examples, When to Use, Common Mistakes, Comparison; continue for all related units being summarized in the post)*
+*(Repeat the subsections: Grammar Rule, Form Table, Key Examples, When to Use, Common Mistakes, Comparison; continue for all units in this topic)*
 
 ---
 
-## 5. Quick Summary
+## 5. Topic Comparison Table
 
-End the post with a concise bullet-point recap for all units covered in the post.
+When the topic contains multiple related grammar points, end with a **comparison table** that shows the key differences at a glance.
+
+Example for Present Tenses:
+
+| Tense              | Use                              | Signal Words              |
+| ------------------ | -------------------------------- | ------------------------- |
+| Present Simple     | Habits, facts, routines          | always, usually, every    |
+| Present Continuous | Actions happening now / temporary | now, at the moment, today |
+| Present Perfect    | Past action with present result  | just, already, yet, ever  |
+
+Skip this section if the units do not contrast different grammar points.
+
+---
+
+## 6. Quick Summary
+
+End the post with a concise bullet-point recap for all units covered.
 
 Format:
 
 ```markdown
 ## 📝 Quick Summary
 
-**Unit {N}:**
+**Unit {N} — {Topic}:**
 - Use [grammar point] to [main use case].
 - Don't forget: [one key reminder].
 
-**Unit {M}:**
+**Unit {M} — {Topic}:**
 - Use [grammar point] to [main use case].
 - Don't forget: [one key reminder].
 
-*(Repeat for all units)*
+*(Repeat for all units in this topic)*
 ```
 
 ---
@@ -218,13 +266,13 @@ Avoid heavy linguistic terminology. Prefer plain explanations.
 # File Naming Convention
 
 ```
-_posts/english/english-grammar-in-use-book/YYYY-MM-DD-grammar-in-use-units-{Start_Unit}-{End_Unit}.md
+_posts/english/english-grammar-in-use-book/YYYY-MM-DD-grammar-in-use-{topic-slug}.md
 ```
 
 Example:
 
 ```
-_posts/english/english-grammar-in-use-book/2026-03-09-grammar-in-use-units-5-7.md
+_posts/english/english-grammar-in-use-book/2026-04-14-grammar-in-use-present-tenses.md
 ```
 
 Rules:
@@ -232,21 +280,23 @@ Rules:
 * lowercase
 * kebab-case
 * use today's date
-* always include the combined unit numbers
+* use the topic slug (not unit numbers) as the identifier
+* the topic slug should be descriptive: `present-tenses`, `modal-verbs`, `conditionals`, etc.
 
 ---
 
 # Generation Workflow
 
-When generating a unit summary:
+When generating a topic summary:
 
-1. Identify the related units to be combined and their grammar topics
-2. Research the grammar rules thoroughly for all combined units (if not already known)
-3. Plan the form tables and example sentences for each unit
-4. Write the post following the structure above, covering all chosen units
+1. Identify the **grammar topic** and all units that belong to it
+2. Research the grammar rules thoroughly for all units in the topic
+3. Plan the Mermaid diagram (if applicable), form tables, and example sentences
+4. Write the post following the structure above, covering all units in the topic
 5. Validate:
-   * correct front matter format, combined units reflected accurately
+   * correct front matter format, topic and all unit numbers reflected accurately
    * form tables are accurate and present for each unit
    * examples are grammatically correct
-   * correct directory: `_posts/english/`
-   * correct date and unit numbers in filename
+   * Topic Comparison Table is included when multiple grammar points are contrasted
+   * correct directory: `_posts/english/english-grammar-in-use-book/`
+   * correct date and topic slug in filename
