@@ -2,6 +2,7 @@
 title: "Android Jetpack Compose Render Phases Explained"
 description: "Deep dive into the three render phases of Jetpack Compose — Composition, Layout, and Drawing — and how understanding them unlocks better performance."
 date: 2026-03-09 00:00:00
+mermaid: true
 categories: [Android]
 tags: [compose, render-phases, composition, layout, drawing, performance, recomposition]
 ---

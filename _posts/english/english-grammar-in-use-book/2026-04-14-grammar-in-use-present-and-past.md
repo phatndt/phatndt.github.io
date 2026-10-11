@@ -2,6 +2,7 @@
 title: "Present and Past: Units 1–6 — English Grammar in Use"
 description: "Master the four essential tenses in English — Present Continuous, Present Simple, and their differences, plus Past Simple and Past Continuous. This post covers Units 1–6 of English Grammar in Use, explaining when and how to use each tense with clear tables, examples, and common mistakes."
 date: 2026-04-14 00:00:00
+mermaid: true
 categories: [English, Grammar]
 tags:
   - grammar

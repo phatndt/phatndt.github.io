@@ -1,6 +1,7 @@
 ---
 title: iOS Source Code Structure
 date: 2026-03-10 00:00:00
+mermaid: true
 categories: [iOS, Architecture]
 tags: [ios, structure, xcode, architecture, swift]
 ---

@@ -2,6 +2,7 @@
 title: "Android Jetpack Compose Side Effects Explained"
 description: "Deep dive into Compose side effects — LaunchedEffect, rememberCoroutineScope, DisposableEffect, SideEffect, derivedStateOf, snapshotFlow, and more — with practical examples and interview insights."
 date: 2026-03-11 00:00:00
+mermaid: true
 categories: [Android]
 tags: [compose, side-effects, launched-effect, disposable-effect, derived-state, snapshot-flow, coroutine, lifecycle, recomposition]
 ---

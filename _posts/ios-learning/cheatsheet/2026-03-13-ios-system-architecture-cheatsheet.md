@@ -2,6 +2,7 @@
 title: "iOS System Architecture Cheatsheet"
 description: "Quick reference for the four layers of iOS system architecture and their key frameworks."
 date: 2026-03-13 00:00:00
+mermaid: true
 categories: [iOS, Cheatsheet]
 tags: [ios, swift, cheatsheet, system-architecture, core-os, cocoa-touch]
 ---

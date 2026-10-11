@@ -2,6 +2,7 @@
 title: "iOS System Architecture Explained"
 description: "Understand the layered architecture of iOS, from the Core OS kernel to the Cocoa Touch framework, and learn how each layer contributes to building iOS applications."
 date: 2026-03-13 00:00:00
+mermaid: true
 categories: [iOS]
 tags: [ios, swift, system-architecture, core-os, cocoa-touch, core-services, media-layer]
 ---

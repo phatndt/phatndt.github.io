@@ -2,6 +2,7 @@
 title: "Android Compose Side Effects Cheatsheet"
 description: "Quick reference for Jetpack Compose side effect APIs — LaunchedEffect, DisposableEffect, SideEffect, derivedStateOf, snapshotFlow, and more — for interview preparation."
 date: 2026-03-11 00:00:00
+mermaid: true
 categories: [Android]
 tags: [compose, side-effects, cheatsheet, launched-effect, disposable-effect, derived-state, snapshot-flow, interview]
 ---

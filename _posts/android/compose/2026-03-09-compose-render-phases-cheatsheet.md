@@ -2,6 +2,7 @@
 title: "Android Compose Render Phases Cheatsheet"
 description: "Quick reference for Jetpack Compose's three render phases — Composition, Layout, and Drawing — for interview preparation."
 date: 2026-03-09 00:00:00
+mermaid: true
 categories: [Android]
 tags: [compose, render-phases, cheatsheet, performance, interview]
 ---

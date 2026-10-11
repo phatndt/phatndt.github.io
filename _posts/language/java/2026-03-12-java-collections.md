@@ -1,6 +1,7 @@
 ---
 title: Java Collections Framework
 date: 2026-03-12 00:00:00
+mermaid: true
 categories: [Language, Java]
 tags: [java, collections, data-structure, performance, interview]
 ---

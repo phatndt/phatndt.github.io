@@ -1,6 +1,7 @@
 ---
 title: Clean architecture in Android
 date: 2024-11-19 20:30:00
+mermaid: true
 categories: []
 tags: [architecture]
 ---
