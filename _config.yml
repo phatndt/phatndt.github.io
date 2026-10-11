@@ -3,23 +3,12 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# -------Polyglot i18n plugin--------
-plugins:
-  - jekyll-polyglot
-
-languages: ["en", "vi"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "assets", "sitemap", "CNAME"]
-parallel_localization: false
-# -----------------------------------
-
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-# Note: Polyglot manages the active language via `site.active_lang`; `lang` here is the default fallback.
 lang: en
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+# Change to your timezone › https://zones.arilyn.cc
 timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
@@ -80,8 +69,10 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
+  fathom:
+    id: # fill in your Fathom Site ID
 
-# Pageviews settings
+# Page views settings
 pageviews:
   provider: # now only supports 'goatcounter'
 
@@ -93,8 +84,8 @@ pageviews:
 #
 # Available options:
 #
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
 #
 theme_mode: # [light | dark]
 
@@ -115,8 +106,18 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+actions:
+  # Display "Edit this post" action on each post page to encourage contributions.
+  edit_post:
+    enabled: false # set to true to display the "Edit this post" action.
+    url: "" # repository base URL, e.g. https://github.com/cotes2020/jekyll-theme-chirpy/edit/master
+    # Use dynamic or static URL for the edit link.
+    # If `static_url` is false, the post's path will be appended to the `url` above as the final edit link.
+    # Set to true if the URL should remain unchanged, which means each post will share the same edit link.
+    static_url: false # [ true | false ]
+
 comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
+  # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
@@ -141,12 +142,12 @@ comments:
 assets:
   self_host:
     enabled: true
-    # env: # [development | production]
+    env: # [development | production]
 
 pwa:
-  enabled: true # the option for PWA feature (installable)
+  enabled: true # The option for PWA feature (installable)
   cache:
-    enabled: true # the option for PWA offline cache
+    enabled: true # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
@@ -198,10 +199,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
 
 sass:
   style: compressed
@@ -222,8 +219,9 @@ exclude:
   - tools
   - README.md
   - LICENSE
+  - purgecss.js
   - "*.config.js"
-  - package*.json
+  - "package*.json"
 
 jekyll-archives:
   enabled: [categories, tags]
